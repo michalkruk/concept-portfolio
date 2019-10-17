@@ -4,7 +4,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 300px; }
 
 @font-face {
   font-family: 'DINPro-Light';
@@ -29,6 +30,9 @@ body {
   margin: 5px;
   height: 100px; }
 
+.logo {
+  position: fixed; }
+
 .logo-image {
   width: 10vh;
   height: 6.3vh;
@@ -52,7 +56,8 @@ a {
 .content {
   width: 60%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 10vh; }
 
 .top-row {
   max-height: 500px; }
@@ -203,6 +208,9 @@ nav a:hover:after {
 @media (max-width: 1025px) {
   .logo-image {
     padding: 1vh 0 0 1vh; }
+  .photo-me {
+    height: 25vh;
+    width: 25vh; }
   .nav {
     background-color: white; }
   .nav__socials {
@@ -210,8 +218,24 @@ nav a:hover:after {
   .nav__menu {
     margin-right: 1vh; } }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
+  body {
+    min-height: 1000px; }
   .content {
+    width: 80%; }
+  .top-row {
+    display: flex;
+    flex-direction: column; }
+  .about-me {
+    width: 100%;
+    transform: translateY(0vh);
+    padding: 2vh; }
+  .photo {
+    display: flex;
+    justify-content: center; }
+  .down-row {
+    flex-direction: column; }
+  .skills {
     width: 100%; } }
 
 @media (max-width: 375px) {
