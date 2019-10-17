@@ -81,6 +81,20 @@ a {
 .timeline-list {
   list-style-type: square; }
 
+.projects {
+  font-size: 2vh;
+  margin-bottom: 0; }
+
+.projects-list {
+  font-size: 1.5vh;
+  margin-top: 1vh;
+  font-weight: bold;
+  list-style-type: none; }
+
+.projects-list a {
+  display: inline;
+  font-size: 5vh; }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -103,13 +117,13 @@ a {
   margin-right: 10vh;
   text-align: right; }
 
-a {
+nav a {
   color: black;
   text-decoration: none;
   display: inline-block;
   position: relative; }
 
-a:after {
+nav a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -121,7 +135,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0; }
 
-a:hover:after {
+nav a:hover:after {
   width: 100%;
   left: 0; }
 
