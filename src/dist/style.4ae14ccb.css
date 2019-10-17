@@ -60,7 +60,7 @@ a {
 .about-me {
   z-index: 1;
   width: 70%;
-  transform: translateY(-20vh); }
+  transform: translateY(-25vh); }
 
 .photo {
   z-index: 0;
@@ -93,7 +93,7 @@ a {
 
 .projects-list a {
   display: inline;
-  font-size: 5vh; }
+  font-size: 7vh; }
 
 .nav {
   display: flex;
@@ -141,6 +141,60 @@ nav a:hover:after {
 
 .about {
   color: #69e9f5; }
+
+.show-details-bookstore:hover::after {
+  content: "WebApp, Javascript, React, Java, Spring";
+  display: inline-block;
+  font-size: 2vh;
+  padding: 1vh;
+  background-color: #69e9f5;
+  transform: translateX(-54vh);
+  transition: width 500ms; }
+
+.show-details-users:hover::after {
+  content: "WebApp, Javascript, React, Redux";
+  display: inline-block;
+  font-size: 2vh;
+  padding: 1vh;
+  background-color: #69e9f5;
+  transform: translateX(-35vh);
+  transition: width 500ms; }
+
+.show-details-piano:hover::after {
+  content: "WebApp, Html, Css, Javascript";
+  display: inline-block;
+  font-size: 2vh;
+  padding: 1vh;
+  background-color: #69e9f5;
+  transform: translateX(-54vh);
+  transition: width 500ms; }
+
+.show-details-grave:hover::after {
+  content: "Desktop App, Python, AI, Machine learning";
+  display: inline-block;
+  font-size: 2vh;
+  padding: 1vh;
+  background-color: #69e9f5;
+  transform: translateX(-54vh);
+  transition: width 500ms; }
+
+.show-details-cruise:hover::after {
+  content: "Desktop App, Java, FuzzyLogic";
+  display: inline-block;
+  font-size: 2vh;
+  padding: 1vh;
+  background-color: #69e9f5;
+  transform: translateX(-54vh);
+  transition: width 500ms; }
+
+.show-details-website:hover::after {
+  content: "Website, Html, Css, Javascript, Sass, Parcel Bundler";
+  display: inline-block;
+  font-size: 2vh;
+  padding: 1vh;
+  background-color: #69e9f5;
+  transform: translateX(-54vh);
+  transition: width 500ms; }
 
 
 /*# sourceMappingURL=/style.4ae14ccb.css.map */
