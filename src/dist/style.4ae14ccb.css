@@ -38,10 +38,10 @@ body {
   height: 6.3vh;
   padding: 10vh 0 0 10vh; }
 
-.intro {
+.intro p {
   font-size: 3vh;
   text-align: right;
-  padding-right: 5vh; }
+  padding: 10vh 10vh 0 0; }
 
 a {
   color: black;
@@ -147,60 +147,6 @@ nav a:hover:after {
 .about {
   color: #69e9f5; }
 
-.show-details-bookstore:hover::after {
-  content: 'WebApp, Javascript, React, Java, Spring';
-  display: inline-block;
-  font-size: 2vh;
-  padding: 1vh;
-  background-color: #69e9f5;
-  transform: translateX(-52vh);
-  transition: width 500ms; }
-
-.show-details-users:hover::after {
-  content: 'WebApp, Javascript, React, Redux';
-  display: inline-block;
-  font-size: 2vh;
-  padding: 1vh;
-  background-color: #69e9f5;
-  transform: translateX(-39vh);
-  transition: width 500ms; }
-
-.show-details-piano:hover::after {
-  content: 'WebApp, Html, Css, Javascript';
-  display: inline-block;
-  font-size: 2vh;
-  padding: 1vh;
-  background-color: #69e9f5;
-  transform: translateX(-32vh);
-  transition: width 500ms; }
-
-.show-details-grave:hover::after {
-  content: 'Desktop App, Python, AI, Machine learning';
-  display: inline-block;
-  font-size: 2vh;
-  padding: 1vh;
-  background-color: #69e9f5;
-  transform: translateX(-67vh);
-  transition: width 500ms; }
-
-.show-details-cruise:hover::after {
-  content: 'Desktop App, Java, FuzzyLogic';
-  display: inline-block;
-  font-size: 2vh;
-  padding: 1vh;
-  background-color: #69e9f5;
-  transform: translateX(-41vh);
-  transition: width 500ms; }
-
-.show-details-website:hover::after {
-  content: 'Website, Html, Css, Javascript, Sass, Parcel Bundler';
-  display: inline-block;
-  font-size: 2vh;
-  padding: 1vh;
-  background-color: #69e9f5;
-  transform: translateX(-50vh);
-  transition: width 500ms; }
-
 .bullet {
   display: inline;
   color: #69e9f5; }
@@ -223,6 +169,8 @@ nav a:hover:after {
     min-height: 1000px; }
   .content {
     width: 80%; }
+  .intro {
+    padding: 5vh 0; }
   .top-row {
     display: flex;
     flex-direction: column; }
@@ -276,6 +224,56 @@ nav a:hover:after {
     content: '\a Website, Html, Css, Javascript, Sass, Parcel Bundler';
     font-size: 1vh;
     white-space: pre; } }
+
+@media (min-width: 1200px) {
+  .show-details-bookstore:hover::after {
+    content: 'WebApp, Javascript, React, Java, Spring';
+    display: inline-block;
+    font-size: 2vh;
+    padding: 1vh;
+    background-color: #69e9f5;
+    transform: translateX(-52vh);
+    transition: width 500ms; }
+  .show-details-users:hover::after {
+    content: 'WebApp, Javascript, React, Redux';
+    display: inline-block;
+    font-size: 2vh;
+    padding: 1vh;
+    background-color: #69e9f5;
+    transform: translateX(-39vh);
+    transition: width 500ms; }
+  .show-details-piano:hover::after {
+    content: 'WebApp, Html, Css, Javascript';
+    display: inline-block;
+    font-size: 2vh;
+    padding: 1vh;
+    background-color: #69e9f5;
+    transform: translateX(-32vh);
+    transition: width 500ms; }
+  .show-details-grave:hover::after {
+    content: 'Desktop App, Python, AI, Machine learning';
+    display: inline-block;
+    font-size: 2vh;
+    padding: 1vh;
+    background-color: #69e9f5;
+    transform: translateX(-67vh);
+    transition: width 500ms; }
+  .show-details-cruise:hover::after {
+    content: 'Desktop App, Java, FuzzyLogic';
+    display: inline-block;
+    font-size: 2vh;
+    padding: 1vh;
+    background-color: #69e9f5;
+    transform: translateX(-41vh);
+    transition: width 500ms; }
+  .show-details-website:hover::after {
+    content: 'Website, Html, Css, Javascript, Sass, Parcel Bundler';
+    display: inline-block;
+    font-size: 2vh;
+    padding: 1vh;
+    background-color: #69e9f5;
+    transform: translateX(-50vh);
+    transition: width 500ms; } }
 
 
 /*# sourceMappingURL=/style.4ae14ccb.css.map */
