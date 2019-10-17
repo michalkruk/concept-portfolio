@@ -18,7 +18,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-content: space-between; }
+  align-content: space-between;
+  justify-content: center; }
 
 .header {
   display: flex;
@@ -29,20 +30,44 @@ body {
   margin: 5px;
   height: 100px; }
 
+.logo-image {
+  width: 10vh;
+  height: 6.3vh;
+  padding: 10vh 0 0 10vh; }
+
 .intro {
   font-size: 3vh;
   text-align: right;
-  padding-right: 10vh; }
+  padding-right: 5vh; }
 
 a {
   color: black;
   text-decoration: none; }
 
-.location {
-  margin-right: auto;
-  position: fixed;
-  z-index: 1000000;
-  transform: rotate(-90deg); }
+.wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.content {
+  width: 60%;
+  display: flex;
+  flex-direction: column; }
+
+.about-me {
+  z-index: 1;
+  width: 70%;
+  transform: translateY(-20vh); }
+
+.photo {
+  z-index: 0;
+  text-align: right; }
+
+.photo-me {
+  opacity: 0.5;
+  height: 50vh;
+  width: 50vh; }
 
 .nav {
   display: flex;
@@ -52,13 +77,18 @@ a {
   z-index: 1000000;
   overflow: hidden;
   bottom: 0px;
-  width: 100%; }
+  width: 100%;
+  font-size: 2vh; }
 
 .nav ul {
   list-style-type: none; }
 
+.nav__socials {
+  margin-left: 10vh;
+  padding-left: 0vh; }
+
 .nav__menu {
-  margin-right: 5vh;
+  margin-right: 10vh;
   text-align: right; }
 
 
