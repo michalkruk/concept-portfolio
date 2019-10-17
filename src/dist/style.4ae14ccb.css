@@ -148,7 +148,7 @@ nav a:hover:after {
   font-size: 2vh;
   padding: 1vh;
   background-color: #69e9f5;
-  transform: translateX(-54vh);
+  transform: translateX(-52vh);
   transition: width 500ms; }
 
 .show-details-users:hover::after {
@@ -157,7 +157,7 @@ nav a:hover:after {
   font-size: 2vh;
   padding: 1vh;
   background-color: #69e9f5;
-  transform: translateX(-35vh);
+  transform: translateX(-39vh);
   transition: width 500ms; }
 
 .show-details-piano:hover::after {
@@ -166,7 +166,7 @@ nav a:hover:after {
   font-size: 2vh;
   padding: 1vh;
   background-color: #69e9f5;
-  transform: translateX(-54vh);
+  transform: translateX(-32vh);
   transition: width 500ms; }
 
 .show-details-grave:hover::after {
@@ -175,7 +175,7 @@ nav a:hover:after {
   font-size: 2vh;
   padding: 1vh;
   background-color: #69e9f5;
-  transform: translateX(-54vh);
+  transform: translateX(-67vh);
   transition: width 500ms; }
 
 .show-details-cruise:hover::after {
@@ -184,7 +184,7 @@ nav a:hover:after {
   font-size: 2vh;
   padding: 1vh;
   background-color: #69e9f5;
-  transform: translateX(-54vh);
+  transform: translateX(-41vh);
   transition: width 500ms; }
 
 .show-details-website:hover::after {
@@ -193,8 +193,12 @@ nav a:hover:after {
   font-size: 2vh;
   padding: 1vh;
   background-color: #69e9f5;
-  transform: translateX(-54vh);
+  transform: translateX(-50vh);
   transition: width 500ms; }
+
+.bullet {
+  display: inline;
+  color: #69e9f5; }
 
 
 /*# sourceMappingURL=/style.4ae14ccb.css.map */
