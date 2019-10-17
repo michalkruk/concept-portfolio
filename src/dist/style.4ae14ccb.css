@@ -7,11 +7,11 @@ body {
   height: 100%; }
 
 @font-face {
-  font-family: "DINPro-Light";
+  font-family: 'DINPro-Light';
   src: url("/DINPro-Light tr.7e55175c.ttf"); }
 
 * {
-  font-family: "DINPro-Light"; }
+  font-family: 'DINPro-Light'; }
 
 .main {
   height: inherit;
@@ -81,9 +81,9 @@ a {
 .timeline-list {
   list-style-type: square; }
 
-.projects {
+.projects-title {
   font-size: 2vh;
-  margin-bottom: 0; }
+  margin: 0 1vh; }
 
 .projects-list {
   font-size: 1.5vh;
@@ -126,7 +126,7 @@ nav a {
 nav a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   left: 50%;
@@ -143,7 +143,7 @@ nav a:hover:after {
   color: #69e9f5; }
 
 .show-details-bookstore:hover::after {
-  content: "WebApp, Javascript, React, Java, Spring";
+  content: 'WebApp, Javascript, React, Java, Spring';
   display: inline-block;
   font-size: 2vh;
   padding: 1vh;
@@ -152,7 +152,7 @@ nav a:hover:after {
   transition: width 500ms; }
 
 .show-details-users:hover::after {
-  content: "WebApp, Javascript, React, Redux";
+  content: 'WebApp, Javascript, React, Redux';
   display: inline-block;
   font-size: 2vh;
   padding: 1vh;
@@ -161,7 +161,7 @@ nav a:hover:after {
   transition: width 500ms; }
 
 .show-details-piano:hover::after {
-  content: "WebApp, Html, Css, Javascript";
+  content: 'WebApp, Html, Css, Javascript';
   display: inline-block;
   font-size: 2vh;
   padding: 1vh;
@@ -170,7 +170,7 @@ nav a:hover:after {
   transition: width 500ms; }
 
 .show-details-grave:hover::after {
-  content: "Desktop App, Python, AI, Machine learning";
+  content: 'Desktop App, Python, AI, Machine learning';
   display: inline-block;
   font-size: 2vh;
   padding: 1vh;
@@ -179,7 +179,7 @@ nav a:hover:after {
   transition: width 500ms; }
 
 .show-details-cruise:hover::after {
-  content: "Desktop App, Java, FuzzyLogic";
+  content: 'Desktop App, Java, FuzzyLogic';
   display: inline-block;
   font-size: 2vh;
   padding: 1vh;
@@ -188,7 +188,7 @@ nav a:hover:after {
   transition: width 500ms; }
 
 .show-details-website:hover::after {
-  content: "Website, Html, Css, Javascript, Sass, Parcel Bundler";
+  content: 'Website, Html, Css, Javascript, Sass, Parcel Bundler';
   display: inline-block;
   font-size: 2vh;
   padding: 1vh;
@@ -199,6 +199,59 @@ nav a:hover:after {
 .bullet {
   display: inline;
   color: #69e9f5; }
+
+@media (max-width: 1025px) {
+  .logo-image {
+    padding: 1vh 0 0 1vh; }
+  .nav {
+    background-color: white; }
+  .nav__socials {
+    margin-left: 1vh; }
+  .nav__menu {
+    margin-right: 1vh; } }
+
+@media (max-width: 550px) {
+  .content {
+    width: 100%; } }
+
+@media (max-width: 375px) {
+  .projects-list a {
+    font-size: 3vh; } }
+
+@media (max-width: 1200px) {
+  .projects-list a {
+    font-size: 4vh; }
+  .projects-title {
+    margin-bottom: 2vh; }
+  .projects-list li {
+    margin-bottom: 2vh; }
+  .show-details {
+    line-height: 0.5vh;
+    margin-bottom: 100px; }
+  .show-details-bookstore::after {
+    content: '\a WebApp, Javascript, React, Java, Spring';
+    font-size: 1vh;
+    white-space: pre; }
+  .show-details-users::after {
+    content: '\a WebApp, Javascript, React, Redux';
+    font-size: 1vh;
+    white-space: pre; }
+  .show-details-piano::after {
+    content: '\a WebApp, Html, Css, Javascript';
+    font-size: 1vh;
+    white-space: pre; }
+  .show-details-grave::after {
+    content: '\a Desktop App, Python, AI, Machine learning';
+    font-size: 1vh;
+    white-space: pre; }
+  .show-details-cruise::after {
+    content: '\a Desktop App, Java, FuzzyLogic';
+    font-size: 1vh;
+    white-space: pre; }
+  .show-details-website::after {
+    content: '\a Website, Html, Css, Javascript, Sass, Parcel Bundler';
+    font-size: 1vh;
+    white-space: pre; } }
 
 
 /*# sourceMappingURL=/style.4ae14ccb.css.map */
