@@ -227,53 +227,47 @@ nav a:hover:after {
 
 @media (min-width: 1200px) {
   .show-details-bookstore:hover::after {
-    content: 'WebApp, Javascript, React, Java, Spring';
+    content: 'WebApp, JS, React, Java';
     display: inline-block;
     font-size: 2vh;
     padding: 1vh;
     background-color: #69e9f5;
-    transform: translateX(-52vh);
-    transition: width 500ms; }
+    transform: translateX(-52vh); }
   .show-details-users:hover::after {
     content: 'WebApp, Javascript, React, Redux';
     display: inline-block;
     font-size: 2vh;
     padding: 1vh;
     background-color: #69e9f5;
-    transform: translateX(-39vh);
-    transition: width 500ms; }
+    transform: translateX(-39vh); }
   .show-details-piano:hover::after {
     content: 'WebApp, Html, Css, Javascript';
     display: inline-block;
     font-size: 2vh;
     padding: 1vh;
     background-color: #69e9f5;
-    transform: translateX(-32vh);
-    transition: width 500ms; }
+    transform: translateX(-32vh); }
   .show-details-grave:hover::after {
-    content: 'Desktop App, Python, AI, Machine learning';
+    content: 'Python, AI, ML';
     display: inline-block;
     font-size: 2vh;
     padding: 1vh;
     background-color: #69e9f5;
-    transform: translateX(-67vh);
-    transition: width 500ms; }
+    transform: translateX(-67vh); }
   .show-details-cruise:hover::after {
     content: 'Desktop App, Java, FuzzyLogic';
     display: inline-block;
     font-size: 2vh;
     padding: 1vh;
     background-color: #69e9f5;
-    transform: translateX(-41vh);
-    transition: width 500ms; }
+    transform: translateX(-41vh); }
   .show-details-website:hover::after {
-    content: 'Website, Html, Css, Javascript, Sass, Parcel Bundler';
+    content: 'Html, Sass, Js, ParcelBundler';
     display: inline-block;
     font-size: 2vh;
     padding: 1vh;
     background-color: #69e9f5;
-    transform: translateX(-50vh);
-    transition: width 500ms; } }
+    transform: translateX(-50vh); } }
 
 
 /*# sourceMappingURL=/style.4ae14ccb.css.map */
