@@ -151,45 +151,6 @@ nav a:hover:after {
   display: inline;
   color: #69e9f5; }
 
-@media (max-width: 1025px) {
-  .logo-image {
-    padding: 1vh 0 0 1vh; }
-  .photo-me {
-    height: 25vh;
-    width: 25vh; }
-  .nav {
-    background-color: white; }
-  .nav__socials {
-    margin-left: 1vh; }
-  .nav__menu {
-    margin-right: 1vh; } }
-
-@media (max-width: 600px) {
-  body {
-    min-height: 1000px; }
-  .content {
-    width: 80%; }
-  .intro {
-    padding: 5vh 0; }
-  .top-row {
-    display: flex;
-    flex-direction: column; }
-  .about-me {
-    width: 100%;
-    transform: translateY(0vh);
-    padding: 2vh; }
-  .photo {
-    display: flex;
-    justify-content: center; }
-  .down-row {
-    flex-direction: column; }
-  .skills {
-    width: 100%; } }
-
-@media (max-width: 375px) {
-  .projects-list a {
-    font-size: 3vh; } }
-
 @media (max-width: 1200px) {
   .projects-list a {
     font-size: 4vh; }
@@ -268,6 +229,45 @@ nav a:hover:after {
     padding: 1vh;
     background-color: #69e9f5;
     transform: translateX(-50vh); } }
+
+@media (max-width: 1025px) {
+  .logo-image {
+    padding: 1vh 0 0 1vh; }
+  .photo-me {
+    height: 25vh;
+    width: 25vh; }
+  .nav {
+    background-color: white; }
+  .nav__socials {
+    margin-left: 1vh; }
+  .nav__menu {
+    margin-right: 1vh; } }
+
+@media (max-width: 600px) {
+  body {
+    min-height: 1000px; }
+  .content {
+    width: 80%; }
+  .intro {
+    padding: 5vh 0; }
+  .top-row {
+    display: flex;
+    flex-direction: column; }
+  .about-me {
+    width: 100%;
+    transform: translateY(0vh);
+    padding: 2vh; }
+  .photo {
+    display: flex;
+    justify-content: center; }
+  .down-row {
+    flex-direction: column; }
+  .skills {
+    width: 100%; } }
+
+@media (max-width: 400px) {
+  .projects-list a {
+    font-size: 3vh; } }
 
 
 /*# sourceMappingURL=/style.4ae14ccb.css.map */
