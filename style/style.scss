@@ -70,6 +70,7 @@ a {
 }
 
 .content {
+    z-index: 15;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -137,7 +138,7 @@ a {
     justify-content: space-between;
     margin-top: auto;
     position: fixed;
-    z-index: 1000000;
+    z-index: 11;
     overflow: hidden;
     bottom: 0px;
     width: 100%;
@@ -191,6 +192,9 @@ nav a:hover:after {
 }
 
 @media (max-width: 1025px) {
+    .nav{
+        z-index:10000;
+    }
     .projects-list a {
         font-size: 2.9rem;
     }
