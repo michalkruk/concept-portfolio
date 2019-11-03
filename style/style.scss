@@ -13,6 +13,11 @@ body {
     src: url('../fonts/DINPro-Light\ tr.ttf');
 }
 
+@font-face{
+    font-family: 'Staatliches-Regular';
+    src: url('../fonts/Staatliches-Regular.ttf');
+}
+
 * {
     font-family: 'DINPro-Light';
 }
@@ -42,7 +47,7 @@ body {
 
 .logo-image {
     width: 10vh;
-    height: 6.3vh;
+    height: 10vh;
     padding: 10vh 0 0 10vh;
 }
 
@@ -113,14 +118,19 @@ a {
 .projects-list {
     font-size: 1.5vh;
     margin-top: 1vh;
-    font-weight: bold;
     list-style-type: none;
+    a {
+        font-family: "Staatliches-Regular";
+        display: inline;
+        font-size: 7vh;
+    }
 }
 
-.projects-list a {
-    display: inline;
-    font-size: 7vh;
+.show-details{
+    position: relative;
 }
+
+
 
 .nav {
     display: flex;
@@ -180,9 +190,9 @@ nav a:hover:after {
     color: #69e9f5;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1025px) {
     .projects-list a {
-        font-size: 4vh;
+        font-size: 2.9rem;
     }
     .projects-title {
         margin-bottom: 2vh;
@@ -195,102 +205,62 @@ nav a:hover:after {
     .show-details {
         line-height: 0.5vh;
         margin-bottom: 100px;
+
+        &:after{
+            content: '\a' attr(data-tech);
+            font-size: 1vh;
+            white-space: pre;
+        }
     }
 
-    .show-details-bookstore::after {
-        content: '\a WebApp, Javascript, React, Java, Spring';
-        font-size: 1vh;
-        white-space: pre;
-    }
 
-    .show-details-users::after {
-        content: '\a WebApp, Javascript, React, Redux';
-        font-size: 1vh;
-        white-space: pre;
-    }
-
-    .show-details-piano::after {
-        content: '\a WebApp, Html, Css, Javascript';
-        font-size: 1vh;
-        white-space: pre;
-    }
-
-    .show-details-grave::after {
-        content: '\a Desktop App, Python, AI, Machine learning';
-        font-size: 1vh;
-        white-space: pre;
-    }
-
-    .show-details-cruise::after {
-        content: '\a Desktop App, Java, FuzzyLogic';
-        font-size: 1vh;
-        white-space: pre;
-    }
-
-    .show-details-website::after {
-        content: '\a Website, Html, Css, Javascript, Sass, Parcel Bundler';
-        font-size: 1vh;
-        white-space: pre;
-    }
 }
 
-@media (min-width: 1200px) {
-    .show-details-bookstore:hover::after {
-        content: 'WebApp, JS, React, Java';
-        display: inline-block;
-        font-size: 2vh;
-        padding: 1vh;
+@media (min-width: 1026px) {
+    .show-details::before{
+        content: attr(data-tech);
+        position: absolute;
+        top: 32%;
+        left:0;
+        font-size: 1.8vh;
+        padding: .2vh;
+        opacity:0;
+        z-index: 20;
+    }
+    .show-details::after{
+        content: '';
+        height: 1.4rem;
+        position: absolute;
+        top: 32%;
+        left:0;
+        font-size: 1.8vh;
+        padding: .2vh;
         background-color: #69e9f5;
-        transform: translateX(-52vh);
+        width:0%;
+        opacity:0;
+        transition:width .5s, font .5s,opacity .5s;
+        font-size:0;
+
     }
 
-    .show-details-users:hover::after {
-        content: 'WebApp, Javascript, React, Redux';
-        display: inline-block;
-        font-size: 2vh;
-        padding: 1vh;
-        background-color: #69e9f5;
-        transform: translateX(-39vh);
+    .show-details:hover::before {
+        opacity:1;
+        transition:opacity .5s;
+        
     }
 
-    .show-details-piano:hover::after {
-        content: 'WebApp, Html, Css, Javascript';
-        display: inline-block;
-        font-size: 2vh;
-        padding: 1vh;
-        background-color: #69e9f5;
-        transform: translateX(-32vh);
+    .show-details:hover::after {
+        width: 100%;
+        font-size:1.8vh;
+        opacity:1;
+        transition:width .5s, font .5s,opacity .5s;
+        
     }
 
-    .show-details-grave:hover::after {
-        content: 'Python, AI, ML';
-        display: inline-block;
-        font-size: 2vh;
-        padding: 1vh;
-        background-color: #69e9f5;
-        transform: translateX(-67vh);
-    }
 
-    .show-details-cruise:hover::after {
-        content: 'Desktop App, Java, FuzzyLogic';
-        display: inline-block;
-        font-size: 2vh;
-        padding: 1vh;
-        background-color: #69e9f5;
-        transform: translateX(-41vh);
-    }
-
-    .show-details-website:hover::after {
-        content: 'Html, Sass, Js, ParcelBundler';
-        display: inline-block;
-        font-size: 2vh;
-        padding: 1vh;
-        background-color: #69e9f5;
-        transform: translateX(-50vh);
-    }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1300px) {
     .logo-image {
         padding: 1vh 0 0 1vh;
     }
@@ -311,11 +281,14 @@ nav a:hover:after {
     .nav__menu {
         margin-right: 1vh;
     }
+    .top-row{
+        height: 40%;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     body {
-        min-height: 1000px;
+        min-height: 150vh;
     }
     .content {
         width: 80%;
@@ -348,10 +321,27 @@ nav a:hover:after {
     .skills {
         width: 100%;
     }
+    .projects-list{
+        a{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .down-row {
+        margin-top: 2rem;
+    }    
 }
 @media (max-width: 400px) {
+    body {
+        min-height: 220vh;
+    }
+    .down-row {
+        padding-top: 3rem;
+    }
     .projects-list a {
-        font-size: 3vh;
+        font-size: 1.3rem;
     }
     
 }
